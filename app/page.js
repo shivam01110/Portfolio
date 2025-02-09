@@ -48,9 +48,9 @@ const skills = [
 export function Skills() {
     return <ul className="max-w-sm flex justify-center sm:justify-normal mx-4 flex-wrap mt-10 sm:mt-12 gap-2">
         {skills.map((elem, idx) => {
-            const effect = idx % 3 == 0 ? "from-primary-500 to-primary-600 bg-gradient-to-r" : idx % 3 == 1 ? "from-gray-200 to-gray-300 bg-gradient-to-r text-black" : "from-gray-800 to-gray-900 bg-gradient-to-l"
+            const effect = idx % 3 == 0 ? "cursor-default from-primary-500 to-primary-600 bg-gradient-to-r" : idx % 3 == 1 ? "from-gray-200 to-gray-300 bg-gradient-to-r text-black" : "from-gray-800 to-gray-900 bg-gradient-to-l"
             return <li key={elem} className="text-white">
-                <button className={`${effect} border border-neutral-400 dark:border-neutral-600 font-fancy cursor-pointer hover:shadow-sm font-semibold px-3 sm:px-4 py-2 sm:py-3 text-sm tracking-widest uppercase rounded-lg transition-colors duration-200 ease-in-out`}>
+                <button className={`${effect} cursor-default border border-neutral-400 dark:border-neutral-600 font-fancy hover:shadow-sm font-semibold px-3 sm:px-4 py-2 sm:py-3 text-sm tracking-widest uppercase rounded-lg transition-colors duration-200 ease-in-out`}>
                     {elem}
                 </button>
             </li>

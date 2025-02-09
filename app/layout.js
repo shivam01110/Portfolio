@@ -20,11 +20,15 @@ const glori = gloria({
 export const metadata = {
   title: 'Shivam Kumar | Portfolio',
   description: 'Portfolio of Shivam Kumar',
+  icons: {
+    icon: '/favicon.ico', // Ensure this file is in the public folder
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={`${poppins.className} ${glori.variable} dark:bg-gray-950 transition-colors selection:bg-primary-500 selection:text-white`}>
         <MenuCover>
           {children}
