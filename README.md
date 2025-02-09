@@ -32,7 +32,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy Using Netlify Web Interface
 
 
-Go to [Netlify]([https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme](https://www.netlify.com/)) and log in.
+Go to [Netlify](https://www.netlify.com/)) and log in.
 Click "New site from Git" → Connect to your GitHub repo.
 Set the build command
 Set the publish directory to .next.
